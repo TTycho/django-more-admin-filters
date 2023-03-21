@@ -9,6 +9,7 @@ from more_admin_filters import (
 from more_admin_filters import apps
 from .models import ModelA
 from .models import ModelB
+from .models import ModelC
 
 
 @admin.register(ModelA)
@@ -44,3 +45,6 @@ class ModelAAdmin(admin.ModelAdmin):
 
     def boolean_annotation_view(self, obj):
         return obj.boolean_annotation
+
+admin.site.register(ModelB)
+admin.site.register(ModelC)
