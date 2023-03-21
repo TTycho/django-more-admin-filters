@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'testapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-if 'test' in sys.argv:
-    DB_NAME = ':memory:'
-else:
-    DB_NAME = os.path.join(BASE_DIR, 'db.sqlite3')
+#if 'test' in sys.argv:
+#    DB_NAME = ':memory:'
+#else:
+DB_NAME = os.path.join(BASE_DIR, 'db.sqlite3')
 
 DATABASES = {
     'default': {
